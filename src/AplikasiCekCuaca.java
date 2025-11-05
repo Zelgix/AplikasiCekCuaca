@@ -345,6 +345,7 @@ private void loadFromCSV() {
         lblCity.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblCity.setText("Masukkan Kota :");
 
+        btnCheck.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnCheck.setText("Cek Cuaca");
         btnCheck.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,6 +353,7 @@ private void loadFromCSV() {
             }
         });
 
+        btnSaveFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSaveFavorite.setText("Simpan Ke Favorit");
         btnSaveFavorite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -393,6 +395,7 @@ private void loadFromCSV() {
         lblFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblFavorite.setText("Pilih Kota Favorit :");
 
+        cmbFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cmbFavorite.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Kota Favorit", " " }));
         cmbFavorite.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -400,6 +403,7 @@ private void loadFromCSV() {
             }
         });
 
+        btnDeleteFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnDeleteFavorite.setText("Hapus Favorit");
         btnDeleteFavorite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -435,17 +439,23 @@ private void loadFromCSV() {
 
         PanelInformasiCuaca.setBorder(javax.swing.BorderFactory.createTitledBorder("Informasi Cuaca"));
 
+        lblWeatherIcon.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblWeatherIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblWeatherIcon.setText("Icon");
 
+        lblCityName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblCityName.setText("Kota :");
 
+        lblTemperature.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblTemperature.setText("Suhu :");
 
+        lblDescription.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblDescription.setText("Kondisi :");
 
+        lblHumidity.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblHumidity.setText("Kelembaban :");
 
+        lblWindSpeed.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblWindSpeed.setText("Kecepatan Angin :");
 
         javax.swing.GroupLayout PanelInformasiCuacaLayout = new javax.swing.GroupLayout(PanelInformasiCuaca);
@@ -523,6 +533,7 @@ private void loadFromCSV() {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Data CSV"));
 
+        btnSaveToCSV.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSaveToCSV.setText("Simpan Ke CSV");
         btnSaveToCSV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -530,6 +541,7 @@ private void loadFromCSV() {
             }
         });
 
+        btnLoadFromCSV.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnLoadFromCSV.setText("Muat Dari CSV");
         btnLoadFromCSV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
