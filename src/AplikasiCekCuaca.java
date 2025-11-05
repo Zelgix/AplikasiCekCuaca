@@ -311,14 +311,18 @@ private void loadFromCSV() {
         lblDescription = new javax.swing.JLabel();
         lblHumidity = new javax.swing.JLabel();
         lblWindSpeed = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        PanelPengecekanCuaca = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblWeatherHistory = new javax.swing.JTable();
-        jPanel2 = new javax.swing.JPanel();
+        PanelData = new javax.swing.JPanel();
         btnSaveToCSV = new javax.swing.JButton();
         btnLoadFromCSV = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        PanelUtama.setBackground(new java.awt.Color(0, 0, 0));
+
+        PanelJudul.setBackground(new java.awt.Color(0, 204, 204));
 
         lblJudul.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblJudul.setText("APLIKASI CEK CUACA");
@@ -340,9 +344,11 @@ private void loadFromCSV() {
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        PanelInputKota.setBorder(javax.swing.BorderFactory.createTitledBorder("Input Kota"));
+        PanelInputKota.setBackground(new java.awt.Color(0, 102, 102));
+        PanelInputKota.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Input Kota", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         lblCity.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblCity.setForeground(new java.awt.Color(255, 255, 255));
         lblCity.setText("Masukkan Kota :");
 
         btnCheck.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -390,9 +396,11 @@ private void loadFromCSV() {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        PanelKotaFavorit.setBorder(javax.swing.BorderFactory.createTitledBorder("Kota Favorit"));
+        PanelKotaFavorit.setBackground(new java.awt.Color(0, 102, 102));
+        PanelKotaFavorit.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Kota Favorit", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         lblFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblFavorite.setForeground(new java.awt.Color(255, 255, 255));
         lblFavorite.setText("Pilih Kota Favorit :");
 
         cmbFavorite.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -437,25 +445,32 @@ private void loadFromCSV() {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        PanelInformasiCuaca.setBorder(javax.swing.BorderFactory.createTitledBorder("Informasi Cuaca"));
+        PanelInformasiCuaca.setBackground(new java.awt.Color(0, 102, 102));
+        PanelInformasiCuaca.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informasi Cuaca", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         lblWeatherIcon.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblWeatherIcon.setForeground(new java.awt.Color(255, 255, 255));
         lblWeatherIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblWeatherIcon.setText("Icon");
 
         lblCityName.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblCityName.setForeground(new java.awt.Color(255, 255, 255));
         lblCityName.setText("Kota :");
 
         lblTemperature.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblTemperature.setForeground(new java.awt.Color(255, 255, 255));
         lblTemperature.setText("Suhu :");
 
         lblDescription.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblDescription.setForeground(new java.awt.Color(255, 255, 255));
         lblDescription.setText("Kondisi :");
 
         lblHumidity.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblHumidity.setForeground(new java.awt.Color(255, 255, 255));
         lblHumidity.setText("Kelembaban :");
 
         lblWindSpeed.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblWindSpeed.setForeground(new java.awt.Color(255, 255, 255));
         lblWindSpeed.setText("Kecepatan Angin :");
 
         javax.swing.GroupLayout PanelInformasiCuacaLayout = new javax.swing.GroupLayout(PanelInformasiCuaca);
@@ -499,7 +514,8 @@ private void loadFromCSV() {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Riwayat Pengecekan Cuaca"));
+        PanelPengecekanCuaca.setBackground(new java.awt.Color(0, 102, 102));
+        PanelPengecekanCuaca.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Riwayat Pengecekan Cuaca", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         tblWeatherHistory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -514,24 +530,25 @@ private void loadFromCSV() {
         ));
         jScrollPane1.setViewportView(tblWeatherHistory);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout PanelPengecekanCuacaLayout = new javax.swing.GroupLayout(PanelPengecekanCuaca);
+        PanelPengecekanCuaca.setLayout(PanelPengecekanCuacaLayout);
+        PanelPengecekanCuacaLayout.setHorizontalGroup(
+            PanelPengecekanCuacaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelPengecekanCuacaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        PanelPengecekanCuacaLayout.setVerticalGroup(
+            PanelPengecekanCuacaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelPengecekanCuacaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Data CSV"));
+        PanelData.setBackground(new java.awt.Color(0, 102, 102));
+        PanelData.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Data CSV", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
 
         btnSaveToCSV.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSaveToCSV.setText("Simpan Ke CSV");
@@ -549,20 +566,20 @@ private void loadFromCSV() {
             }
         });
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout PanelDataLayout = new javax.swing.GroupLayout(PanelData);
+        PanelData.setLayout(PanelDataLayout);
+        PanelDataLayout.setHorizontalGroup(
+            PanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelDataLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnSaveToCSV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLoadFromCSV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        PanelDataLayout.setVerticalGroup(
+            PanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelDataLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnSaveToCSV, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -583,8 +600,8 @@ private void loadFromCSV() {
                     .addComponent(PanelInformasiCuaca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PanelUtamaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(PanelPengecekanCuaca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(PanelData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         PanelUtamaLayout.setVerticalGroup(
@@ -600,9 +617,9 @@ private void loadFromCSV() {
                         .addGap(18, 18, 18)
                         .addComponent(PanelInformasiCuaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(PanelUtamaLayout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(PanelPengecekanCuaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(PanelData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -688,10 +705,12 @@ private void loadFromCSV() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PanelData;
     private javax.swing.JPanel PanelInformasiCuaca;
     private javax.swing.JPanel PanelInputKota;
     private javax.swing.JPanel PanelJudul;
     private javax.swing.JPanel PanelKotaFavorit;
+    private javax.swing.JPanel PanelPengecekanCuaca;
     private javax.swing.JPanel PanelUtama;
     private javax.swing.JButton btnCheck;
     private javax.swing.JButton btnDeleteFavorite;
@@ -699,8 +718,6 @@ private void loadFromCSV() {
     private javax.swing.JButton btnSaveFavorite;
     private javax.swing.JButton btnSaveToCSV;
     private javax.swing.JComboBox<String> cmbFavorite;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCity;
     private javax.swing.JLabel lblCityName;
