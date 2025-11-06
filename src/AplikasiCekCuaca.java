@@ -112,6 +112,9 @@ private void loadFavoritesFromFile() {
         // Tambahkan ke tabel
         addToTable(cityName, temp, description, humidity);
         
+        // OTOMATIS SIMPAN KE FAVORIT
+        autoSaveToFavorite(cityName);
+        
     } catch (Exception e) {
         JOptionPane.showMessageDialog(this, "Gagal mengambil data cuaca: " + e.getMessage(), 
                                       "Error", JOptionPane.ERROR_MESSAGE);
@@ -135,10 +138,10 @@ private void setWeatherIcon(String condition) {
     
     switch (condition.toLowerCase()) {
         case "clear":
-            iconPath += "clear.png";
+            iconPath += "pngegg.png";
             break;
         case "clouds":
-            iconPath += "clouds.png";
+            iconPath += "Clouds.png";
             break;
         case "rain":
             iconPath += "rain.png";
@@ -281,6 +284,15 @@ private void loadFromCSV() {
         
     } catch (IOException e) {
         JOptionPane.showMessageDialog(this, "Gagal memuat data: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+    }
+}
+
+    private void autoSaveToFavorite(String city) {
+    // Cek apakah kota sudah ada di favorit
+    if (!favoriteCities.contains(city)) {
+        favoriteCities.add(city);
+        saveFavoritesToFile();
+        updateComboBox();
     }
 }
     /**
