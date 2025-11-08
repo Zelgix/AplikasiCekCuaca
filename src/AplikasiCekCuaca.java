@@ -150,7 +150,7 @@ private void setWeatherIcon(String condition) {
             iconPath += "drizzle.png";
             break;
         case "thunderstorm":
-            iconPath += "thunderstorm.png";
+            iconPath += "Cloud_Strom.png";
             break;
         case "snow":
             iconPath += "snow.png";
@@ -158,7 +158,7 @@ private void setWeatherIcon(String condition) {
         case "mist":
         case "fog":
         case "haze":
-            iconPath += "mist.png";
+            iconPath += "cloudy-sun.png";
             break;
         default:
             iconPath += "clear.png";
